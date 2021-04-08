@@ -29,6 +29,7 @@ markdown: CommonMarkGhPages
 theme: minima
 plugins:
   - jekyll-feed
+  - jekyll-sitemap
 
 destination: docs
 defaults:
@@ -37,12 +38,22 @@ defaults:
       path: ""
     values:
       lang: "it"
-      layout: "default"
   -
     scope:
       path: "en"
     values:
       lang: "en"
+  -
+    scope:
+      path: "blog"
+    values:
+      lang: "it"
+      layout: "default"
+
+# collections:
+#   posts:
+#     permalink: /:year/:month/:day/:title:output_ext
+#     layout: default
 
 
 # Exclude from processing.
