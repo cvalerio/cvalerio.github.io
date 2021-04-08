@@ -1,6 +1,8 @@
 -
   lang: it
   name: versione italiana
+  path: 
 -
   lang: en
   name: english version
+  path: en
