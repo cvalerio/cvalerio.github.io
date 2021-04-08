@@ -25,12 +25,25 @@ twitter_username: jekyllrb
 github_username:  jekyll
 
 # Build settings
-markdown: kramdown
+markdown: CommonMarkGhPages
 theme: minima
 plugins:
   - jekyll-feed
 
 destination: docs
+defaults:
+  -
+    scope:
+      path: ""
+    values:
+      lang: "it"
+      layout: "default"
+  -
+    scope:
+      path: "en"
+    values:
+      lang: "en"
+
 
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
