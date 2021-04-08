@@ -1,0 +1,33 @@
+$wrapperWidthWebkit: -webkit-calc(900px - (30px * 2));
+$wrapperWidth: calc(900px - (30px * 2));
+
+body {
+   color: #333;
+   font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+   font-size: 100%;
+   line-height: 1.4;
+   background-color: #fff;
+}
+
+h1{
+   
+   text-align: center;
+}
+
+.wrapper {
+   max-width: $wrapperWidthWebkit;
+   max-width: $wrapperWidth;
+}
+
+.right {
+   text-align: right;
+}
+
+.center {
+   text-align: center;
+}
+
+.left{
+   text-align: left;
+}
+
