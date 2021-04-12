@@ -1,7 +1,7 @@
 ---
 # Feel free to add content and custom Front Matter to this file.
 # To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
-title: Sono un programmatore. Vengo in pace ;)
+title: "Sono un programmatore. Vengo in pace :smiley:"
 layout: home
 ---
 
