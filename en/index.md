@@ -1,11 +1,9 @@
 ---
 # Feel free to add content and custom Front Matter to this file.
 # To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
-
+title: "Hello, I'm a programmer. I come in peace :smiley:"
 layout: home
 ---
-
-# Hello, I'm a programmer. I come in peace  ;)
 
 <div class="sub-header">
 
