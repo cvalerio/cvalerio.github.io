@@ -1,57 +1,85 @@
 ---
-
 ---
-
 
 @import "general";
 @import "colors";
 @import "blog";
 
 .sub-header {
-   display: flex;
-   place-content: center;
+  display: flex;
+  place-content: center;
 }
 
 .typewriter {
-  border-right: solid 3px rgba(0,255,0,.75);
-  white-space: nowrap;
-  overflow: hidden;    
-  font-family: 'Source Code Pro', monospace;  
+  width: 410px;
+  .paper {
+    border-right: solid 3px rgba(0, 255, 0, 0.75);
+    white-space: nowrap;
+    overflow: hidden;
+    font-family: "Source Code Pro", monospace;
+    animation: animated-text 6s steps(42, end) infinite normal both,
+      animated-cursor 600ms steps(36, end) infinite;
+    text-align: left;
 
-  &::before{
-     display: inline-block;
-     content: '';
-     animation: comment-starter 18s steps(24,end)  infinite;
+    &::before {
+      display: inline-block;
+      content: "";
+      animation: comment-starter 18s steps(24, end) infinite;
+      margin-right: 0.5rem;
+    }
   }
 }
 
-
-.typewriter{
-   animation: 
-    animated-text 6s steps(42,end)  infinite  normal both,
-             animated-cursor 600ms steps(36,end) infinite;
-}
-
 @keyframes comment-starter {
-   0% { content: '//'}
-   32% { content: '//'}
-   33% { content: '\''}
-   65% { content: '\''}
-   66% { content: '#'}
-   99% { content: '#'}
-   100% { content: '//'}
+  0% {
+    content: "//";
+  }
+  32% {
+    content: "//";
+  }
+  33% {
+    content: " '";
+  }
+  65% {
+    content: " '";
+  }
+  66% {
+    content: " #";
+  }
+  99% {
+    content: " #";
+  }
+  100% {
+    content: "//";
+  }
 }
 
-@keyframes animated-text{
-  0%{width: 0;}
-  10%{width: 0;}
-  40%{width: 390px;}
-  60%{width: 390px;}
-  90%{width: 0}
-  100%{width: 0}
+@keyframes animated-text {
+  0% {
+    width: 0;
+  }
+  10% {
+    width: 0;
+  }
+  40% {
+    width: 390px;
+  }
+  60% {
+    width: 390px;
+  }
+  90% {
+    width: 0;
+  }
+  100% {
+    width: 0;
+  }
 }
 
-@keyframes animated-cursor{
-  from{border-right-color: rgba(0,255,0,.75);}
-  to{border-right-color: transparent;}
+@keyframes animated-cursor {
+  from {
+    border-right-color: rgba(0, 255, 0, 0.75);
+  }
+  to {
+    border-right-color: transparent;
+  }
 }
