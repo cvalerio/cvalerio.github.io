@@ -17,14 +17,14 @@
     white-space: nowrap;
     overflow: hidden;
     font-family: "Source Code Pro", monospace;
-    animation: animated-text 6s steps(42, end) infinite normal both,
+    animation: animated-text 12s steps(43, end) infinite normal both,
       animated-cursor 600ms steps(36, end) infinite;
     text-align: left;
 
     &::before {
       display: inline-block;
       content: "";
-      animation: comment-starter 18s steps(24, end) infinite;
+      animation: comment-starter 36s steps(43, end) infinite;
       margin-right: 0.5rem;
     }
   }
